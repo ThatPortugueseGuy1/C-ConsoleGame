@@ -226,21 +226,21 @@ int main(void)
                 movement2 = !movement2;
                 if (movement2)
                 {
-                    if (inimigoY2 - y < 0)
-                    {
-                        inimigoY2++;
-                    }
-                    else if (inimigoY2 - y > 0)
-                    {
-                        inimigoY2--;
-                    }
-                    else if (inimigoX2 - x < 0)
+                    if (inimigoX2 - x < 0)
                     {
                         inimigoX2++;
                     }
-                    else
+                    else if (inimigoX2 - x > 0)
                     {
                         inimigoX2--;
+                    }
+                    else if (inimigoY2 - y < 0)
+                    {
+                        inimigoY2++;
+                    }
+                    else
+                    {
+                        inimigoY2--;
                     }
                 }
                 if (inimigoX2 == x && inimigoY2 == y)
@@ -286,21 +286,21 @@ int main(void)
                 movement4 = !movement4;
                 if (movement4)
                 {
-                    if (inimigoY4 - y < 0)
-                    {
-                        inimigoY4++;
-                    }
-                    else if (inimigoY4 - y > 0)
-                    {
-                        inimigoY4--;
-                    }
-                    else if (inimigoX4 - x < 0)
+                    if (inimigoX4 - x < 0)
                     {
                         inimigoX4++;
                     }
-                    else
+                    else if (inimigoX4 - x > 0)
                     {
                         inimigoX4--;
+                    }
+                    else if (inimigoY4 - y < 0)
+                    {
+                        inimigoY4++;
+                    }
+                    else
+                    {
+                        inimigoY4--;
                     }
                 }
                 if (inimigoX4 == x && inimigoY4 == y)
